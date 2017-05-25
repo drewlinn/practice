@@ -15,24 +15,30 @@ class Calculate
     Console.WriteLine("Please enter an operator symbol for the type of mathematical operation you would like to perform:");
     string operatorSymbol = Console.ReadLine();
     {
-      if (operatorSymbol == "+") {
+      if (operatorSymbol == "+")
+      {
         int yourAnswer = firstNumber + secondNumber;
         Console.WriteLine(yourAnswer);
       }
-      else if (operatorSymbol == "-") {
+      else if (operatorSymbol == "-")
+      {
         int yourAnswer = firstNumber - secondNumber;
         Console.WriteLine(yourAnswer);
       }
-      else if (operatorSymbol == "*")  {
+      else if (operatorSymbol == "*")
+      {
         int yourAnswer = firstNumber * secondNumber;
         Console.WriteLine(yourAnswer);
       }
-      else if (operatorSymbol == "/") {
+      else if (operatorSymbol == "/")
+      {
         int yourAnswer = firstNumber / secondNumber;
         Console.WriteLine(yourAnswer);
       }
-      else if (operatorSymbol != "+" || operatorSymbol != "-" || operatorSymbol != "*" || operatorSymbol != "/") {
+      else
+      {
         Console.WriteLine("Please enter a valid operator symbol!");
+        Main();
       }
     }
   }
