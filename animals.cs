@@ -10,6 +10,7 @@ class Program
 {
   public static void Main()
   {
+
     Animal Schneider = new Animal();
     Schneider.Species = "Hack";
     Schneider.Age = "12"; //emotionally
